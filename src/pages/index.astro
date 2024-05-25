@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import TransitionText from "../components/TransitionText.astro";
+import OrangeBox from "../components/OrangeBox.astro";
+import Services from "../components/Services.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<TransitionText title="Ad X." />
+
+		<OrangeBox/>
+
+		<Services />
+	</main>
+</Layout>
+
+
+
+
+
+<style is:global>
+	    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	html {
+		width: 100%;
+	}
+	html,
+	body {
+		overflow: auto; /* Change from "hidden" to "auto" */
+		overflow-x: hidden;
+	}
+	body {
+		min-height: 100vh;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h6,
+	h6,
+	p {
+		font-family: "Montserrat", sans-serif;
+	}
+</style>
+
+
+

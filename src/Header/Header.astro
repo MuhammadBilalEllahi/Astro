@@ -1,0 +1,87 @@
+---
+interface Props{}
+
+const {} = Astro.props;
+---
+
+<header class="flex w-full justify-between p-4 text-center items-center custom-header-color max-md:h-fit text-white max-h-30 h-20 ">
+    <h3 class="uppercase font-bold mx-20 mt-2  max-sm:w-full text-2xl whitespace-nowrap max-md:mt-0  " >Adx Factor</h3>
+    
+    <nav class="  items-center flex max-md:hidden">
+        <div>
+            <ul class="whitespace-nowrap flex gap-x-5">
+                <li><a href="">Home </a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+                
+                </ul>
+        </div>
+    </nav>
+
+    <button class="menu-icon whitespace-nowrap max-md:hidden"  onclick="" >Contact Now</button>
+    
+    <!-- <div class=" max-md:flex max-2xl:hidden  " onclick=menuBar()> -->
+        <div onclick="menuBar()"  class="menu-icon  max-w-screen-md:hidden  fas fa-bars"></div>
+      <!-- </div> -->
+    
+</header>
+
+<style>
+
+
+    .custom-header-color{
+        background-color:#24252A;
+    }
+    .menu-icon  {
+        /* width: 100px; */
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  /*display: none;*/
+
+}
+
+</style>
+
+
+
+
+<script >
+	document.addEventListener('DOMContentLoaded', menuBar);
+
+
+function menuBar() {
+
+  var unset_html = document.querySelector("html");
+  var unset_body = document.querySelector("body");
+
+
+
+  var menubar = document.querySelector('#menu-bar');
+  var mynav = document.querySelector('nav');
+
+
+  menubar.onclick = () => {
+
+    unset_html.style.overflow = "unset";
+    unset_body.style.overflow = "unset";
+
+    menubar.classList.toggle('fa-times');
+    mynav.classList.toggle('active');
+  }
+
+  // const navbar = document.querySelector('.header')
+
+  window.onscroll = () => {
+
+    if (window.scrollY > 0) {
+
+      menubar.classList.remove('fa-times');
+      mynav.classList.remove('active');
+
+    }
+  }
+
+}
+
+</script>

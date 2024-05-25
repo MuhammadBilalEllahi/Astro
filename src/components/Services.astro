@@ -1,0 +1,209 @@
+---
+interface Props {}
+const {} = Astro.props;
+---
+
+<section class="img-bg">
+    <div class="tbl">
+        <div class="tbl-col">
+            <div class="left50">
+                <div class="services">
+                    <h2>SERVICES MADE BY EXPERTS</h2>
+                </div>
+
+                <div class="title-us extra">
+                    <div class="line"></div>
+                    <h3 class="who-we-are">What we do</h3>
+                </div>
+                <div class="description-who-we-are extra margin7perc">
+                    <p>
+                        At Adx Factor, we specialize in digital marketing and
+                        advertising across a wide spectrum of social media
+                        platforms. We also excel in branding and design,
+                        steering your brand toward new horizons.
+                        <br /><br />
+
+                        We're dedicated to delivering an engaging and
+                        interactive communication experience across various
+                        channels, all with the ultimate goal of ensuring a
+                        substantial return on investment for our valued clients.
+                    </p>
+                </div>
+
+                <div class="hyper-link">
+                    <div class="SpecialLink IWantAMouseOVerNowBut75">
+                        <a href="index.html" title="View Our Services">
+                            View Our Services
+                        </a>
+                        <div class="Line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right50">
+                <!--             <h2>hello</h2>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .img-bg {
+        position: relative;
+    }
+    @media (max-width: 550px) {
+        .image-banner,
+        .img-bg {
+            padding-top: 40px;
+            position: relative;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .tbl-col {
+            width: 95% !important;
+        }
+        .left50 {
+            width: 50% !important;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .tbl-col {
+            width: 95% !important;
+            flex-direction: column;
+        }
+        .left50 {
+            width: 100% !important;
+        }
+        .tbl {
+            width: 100%;
+        }
+    }
+
+    .tbl {
+        display: flex;
+        /*background-color: red;*/
+        margin-top: 5%;
+
+        width: 100%;
+        min-height: 80vh;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .tbl-col {
+        /*background-color: #39ac31;*/
+        display: inline-flex;
+        width: 70%;
+        height: auto;
+    }
+
+    .left50 {
+        width: 35%;
+        /*background-color: #8fd79b;*/
+    }
+    .services {
+        padding-top: 54px;
+        font-family: Bold, sans-serif;
+        font-size: 20px;
+        letter-spacing: 0.4em;
+        max-width: 360px;
+        padding-bottom: 74px;
+    }
+    .line {
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 0;
+        width: 30px;
+        height: 2px;
+        margin-right: 10px;
+        background-color: black;
+    }
+    @media (max-width: 480px) {
+        .text-change-area-h3 {
+            font-size: 36px;
+        }
+
+        .description-who-we-are {
+            font-size: 14px;
+            padding: 20px;
+        }
+    }
+    .description-who-we-are {
+        font-family: "Book", system-ui;
+        font-size: 15px;
+        color: #222;
+        line-height: 1.8;
+
+        padding-top: 38px;
+        padding-bottom: 54px;
+        padding-left: 20px;
+    }
+    .who-we-are {
+        font-size: 12px;
+        margin-top: -8px;
+        /*font-weight: lighter;*/
+        text-transform: uppercase;
+        /*background-color: #39ac31;*/
+        font-family: "Regular", system-ui;
+    }
+    .title-us {
+        display: inline-flex;
+        /*flex-direction: row-reverse;*/
+        justify-content: space-between;
+        padding-left: 26px;
+        letter-spacing: 0.2em;
+        /*background-color: #cccccc;*/
+    }
+
+    .margin7perc {
+        margin-top: 7%;
+        margin-bottom: 10%;
+    }
+    .extra {
+        padding: 0;
+    }
+
+    .SpecialLink {
+        position: relative;
+        font-family: "Bold", sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        color: #b42a76;
+        padding-left: 20px;
+        text-transform: uppercase;
+        background-image: url(/images2/arrowpink.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        display: inline-block;
+    }
+
+    .SpecialLink a {
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: inherit;
+        border-width: 0;
+        outline: none;
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        display: inherit;
+    }
+    .SpecialLink .Line {
+        position: absolute;
+        left: 20px;
+        right: 0;
+        bottom: -5px;
+        height: 1px;
+        background-color: #b42a76;
+    }
+    .right50 {
+        width: 50%;
+        /*background-color: #d77777;*/
+    }
+</style>

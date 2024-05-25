@@ -1,0 +1,203 @@
+---
+interface Props {
+
+
+}
+const {} = Astro.props;
+
+---
+<script src="https://kit.fontawesome.com/e4a6287325.js" ></script>
+<footer class="sticky-footer">
+    <div class="rowFooter">
+      <div class="colFooter">
+        <!-- <img src="img/images2/adxLogo2.png" class="logofooter" alt=""> -->
+       <h3>ADX FACTOR</h3>
+        <p class="footer-paragraph">DROP US A LINE<br><br>Looking Forward to Hearing From You </p>
+  
+      </div>
+      <div class="colFooter">
+        <h3>Office
+          <div class="underline-h3"><span></span></div>
+        </h3>
+        <p>DHA Phase 2</p>
+        <p>Lahore, Punjab</p>
+        <p>Pakistan 54000</p>
+        <p class="email-id">bilalillahi@gmail.com</p>
+        <p class="email-id">hello@bilalillahi.com</p>
+        <h4> +92 1234567890 </h4>
+      </div>
+      <div class="colFooter">
+        <h3>Links
+          <div class="underline-h3"><span></span></div>
+        </h3>
+        <ul class="footer-ul">
+          <li><a href="/index"></a> Home</li>
+          <li><a href="/advertising-company"></a> About Us</li>
+          <li><a href="/404"></a> Services</li>
+          <li><a href="/our-core-team-for-you"></a> Core Team</li>
+          <li><a href="/contact-us-today"></a> Contact Us</li>
+        </ul>
+      </div>
+      <div class="colFooter">
+        <h3>Newsletter
+          <div class="underline-h3"><span></span></div>
+        </h3>
+        <form class="formFooter">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Your Email Here " required>
+          <button class="buttonFooter" type="submit">  <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icon-footer">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+  
+        </div>
+      </div>
+  
+    </div>
+    <hr>
+    <p class="copy-right">AdxFactor © 2023 - All Rights Reserved </p>
+  </footer>
+  
+
+  <style>
+
+
+/*Footer*/
+.sticky-footer{
+  width: 100%;
+  position: relative;
+  /*top: 100%;*/
+  bottom: 0;
+  /*background: linear-gradient(to right, #000000, #000000);*/
+  background: #24252A;
+  color: #fff;
+  padding: 50px 0 30px;
+  /*border-top-left-radius: 125px;*/
+  font-size: 13px;
+  line-height: 20px;
+}
+.rowFooter{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.colFooter{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.colFooter:nth-child(2), .colFooter:nth-child(3){
+  flex-basis: 15%;
+}
+.footer-paragraph{
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.logofooter{
+  width: 120px;
+  margin-bottom: 30px;
+}
+.colFooter h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #cccccc;
+  margin: 20px 0;
+  cursor: pointer;
+
+}
+.footer-ul li{
+  list-style: none;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.footer-ul li a{
+  list-style: none;
+  color: #ffffff
+}
+.formFooter{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 50px;
+
+}
+.formFooter .fa-regular{
+  font-size: 18px;
+  margin-right: 5px;
+}
+.formFooter input{
+  width: 100%;
+  background: transparent;
+  color: #cccccc;
+  border: 0;
+  outline: none;
+}
+.formFooter button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+}
+.formFooter .buttonFooter .fa-solid{
+  font-size: 16px;
+  color: #cccccc;
+}
+.social-icon-footer .fa-brands{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #ffffff;
+  margin-right: 15px;
+  cursor: pointer;
+
+}
+ hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc ;
+  margin: 20px auto;
+}
+.copy-right{
+  text-align: center;
+}
+.underline-h3{
+  width: 100%;
+  height: 1px;
+  background: #767676;
+  /*border-radius: 3px;*/
+  position: absolute;
+  top: 25px;
+  left: 0;
+  /*overflow: hidden;*/
+}
+@media (max-width: 700px) {
+  footer{
+    bottom: unset;
+  }
+  .colFooter{
+    flex-basis: 100%;
+  }
+
+
+  .colFooter:nth-child(2), .colFooter:nth-child(3){
+    flex-basis: 100%;
+  }
+
+}
+    </style>

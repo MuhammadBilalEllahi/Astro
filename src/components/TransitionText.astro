@@ -1,0 +1,249 @@
+---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<section class="img-bg">
+    <div class="back-banner-1">
+        <div class="back-banner-2">
+            <div class="image-banner cover-img" style="background-size: cover">
+                <h3 class="front-h3">{title}</h3>
+            </div>
+
+            <div class="data-banner">
+                <div class="heading-banner">
+                    <h2>CREATIVITY MEETS TECHNOLOGY</h2>
+                </div>
+                <div class="paragraph-banner">
+                    <h4>
+                        Social Media Management, Paid Marketing, Branding &
+                        Design
+                    </h4>
+                </div>
+            </div>
+
+            <div>
+                <div class="social-icon-banner">
+                    <a class="social-icon-banner-i" href="404.html">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a class="social-icon-banner-i" href="404.html">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                    <a class="social-icon-banner-i" href="404.html">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a class="social-icon-banner-i" href="404.html">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a class="social-icon-banner-i" href="404.html">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                    <a class="social-icon-banner-i" href="404.html">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a class="social-icon-banner-i" href="404.html">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .paragraph-banner h4 {
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .paragraph-banner {
+        margin: auto 10%;
+        /*padding:  10%;*/
+    }
+    /*Social Icon Banner*/
+    .social-icon-banner {
+        display: flex;
+        background-color: #ffffff;
+        width: 100%;
+        padding-top: 2.5%;
+        float: left;
+    }
+    .social-icon-banner-i {
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: inherit;
+        color: inherit;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        margin: 10px;
+        font-size: 20px;
+    }
+    .back-banner-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        height: 100vh; /* Set an appropriate height */
+    }
+    .back-banner-2 {
+        width: 80%;
+        height: 100%;
+        min-width: 550px;
+        background-color: #ffffff;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-banner {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .data-banner {
+        
+        text-align: center;
+    }
+    .heading-banner {
+        letter-spacing: 0.54em;
+        font-family: "Montserrat", sans-serif;
+        margin: 10px;
+    }
+    .heading-banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .img-bg {
+        position: relative;
+    }
+    .front-h3 {
+        font-size: 25vw;
+        /* padding-top: 8%; */
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: "Montserrat", sans-serif;
+        animation: imageTransition 10s infinite alternate;
+        margin: 0;
+        pointer-events: none;
+        user-select: none;
+        font-weight: bold;
+    }
+
+    @keyframes imageTransition {
+        0% {
+            background-image: url(/recuringImage/image1.jpeg);
+        }
+        25% {
+            background-image: url(/recuringImage/image2.jpeg);
+        }
+        50% {
+            background-image: url(/recuringImage/image3.jpeg);
+        }
+        75% {
+            background-image: url(/recuringImage/image4.jpeg);
+        }
+        100% {
+            background-image: url(/recuringImage/image5.jpeg);
+        }
+    }
+    @media (max-width: 550px) {
+        .image-banner,
+        .img-bg {
+            padding-top: 10px;
+            position: relative;
+        }
+        .front-h3 {
+            font-size: 30vw;
+            padding-top: 4%;
+        }
+
+        .heading-banner {
+            text-wrap: wrap;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .paragraph-banner {
+            text-align: left;
+            margin: auto 40px;
+        }
+        /* .data-banner{
+            padding: 10px;
+        } */
+    }
+
+    @media (max-width: 768px) {
+        .paragraph-banner h4 {
+            font-size: 0.9rem;
+            /*padding: 5px;*/
+        }
+
+        .social-icon-banner {
+            justify-content: center; /* Center horizontally */
+        }
+    }
+</style>
+
+<!-- 
+<div class="text-cotainer bg-transparent w-full min-h-screen">
+    <div class="text-center bg-transparent">
+        <h3 class="text-image">{title}</h3>
+    </div>
+</div>
+
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+    .text-image {
+        /* display: block; */
+        /* font-size: 1.17em; */
+        /* margin-block-start: 1em; */
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+    .text-image {
+        font-size: 25vw;
+        background-size: cover;
+        /* background-color: transparent; */
+        color: transparent;
+        animation: imageTransition 10s infinite alternate;
+        background-clip: text;
+        -webkit-background-clip: text;
+
+        font-family: "Montserrat", sans-serif;
+        pointer-events: none;
+        user-select: none;
+    }
+    @keyframes imageTransition {
+        0% {
+            background-image: url(/recuringImage/image1.jpeg);
+        }
+        25% {
+            background-image: url(/recuringImage/image2.jpeg);
+        }
+        50% {
+            background-image: url(/recuringImage/image3.jpeg);
+        }
+        75% {
+            background-image: url(/recuringImage/image4.jpeg);
+        }
+        100% {
+            background-image: url(/recuringImage/image5.jpeg);
+        }
+    }
+</style> -->
